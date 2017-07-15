@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+
+	<!-- Scripts -->
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<script src="http://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+  	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+	   	<script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	      document.createElement('main');
+	      document.createElement('section');
+	      document.createElement('article');
+	      document.createElement('aside');
+	      document.createElement('footer');
+	   	</script>
+	<![endif]-->
+</head>
+<body>
+	<div class="panel">
+		<div class="container row">
+			<div class="panel__logo col"><a href=""><img src="upload/logo.png" alt=""></a></div>
+			<div class="panel__links col">
+				<ul>
+					<li><i class="icon icon-star"></i><a href="">Избранное</a></li>
+					<li><i class="icon icon-login"></i><a href="">Профиль</a></li>
+				</ul>
+			</div>
+			<div class="panel__button col"><a href="" class="button button_xs  button_yellow">Подать объявление</a></div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="search">
+				<div class="search__input input"><i class="icon icon-search"></i><input type="text" placeholder="Поиск объявлений..."></div>
+				<div class="search__input input"><i class="icon icon-marker"></i><input type="text" placeholder="Начните вводить название города..."></div>
+				<button class="search__button button button_xs button_blue">ИСКАТЬ</button>
+			</div>
+			<div class="header__title title">Лучшие предложения для бизнеса такси </div>
+			<div class="offers row row_5">
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-uber"></i></div>
+					<div class="offer__title">Партнеры <br />Uber</div>
+					<div class="offer__count">125 объявлений</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-yandex"></i></div>
+					<div class="offer__title">Партнеры <br />Я.Такси</div>
+					<div class="offer__count">1031 объявление</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-gett"></i></div>
+					<div class="offer__title">Партнеры <br />Gett</div>
+					<div class="offer__count">42 объявления</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-callcenter"></i></div>
+					<div class="offer__title">Службы <br />такси</div>
+					<div class="offer__count">15 объявлений</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-arenda"></i></div>
+					<div class="offer__title">Аренда а/м <br />такси</div>
+					<div class="offer__count">57 объявлений</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-sale"></i></div>
+					<div class="offer__title">Продажа <br />а/м</div>
+					<div class="offer__count">10211 объявлений</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-profile"></i></div>
+					<div class="offer__title">Поиск <br />работы</div>
+					<div class="offer__count">2450 объявлений</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-job"></i></div>
+					<div class="offer__title">Предложение <br />работы</div>
+					<div class="offer__count">891 объявление</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-config"></i></div>
+					<div class="offer__title">Сервисы для <br />такси</div>
+					<div class="offer__count">67 объявлений</div>
+				</div>
+				<div class="offer col">
+					<div class="offer__icon"><i class="icon icon-box"></i></div>
+					<div class="offer__title">Барахолка <br />(разное)</div>
+					<div class="offer__count">8562 объявления</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="new-ads">
+				<div class="new-ads__title title">Новые объявления в Москве</div>
+				<div class="new-ads__list arrows">
+					<div class="new-ads__item">
+						<div class="new-ads__img"><img src="upload/cars/1.png" alt=""></div>
+						<div class="new-ads__content">
+							<div class="new-ads__subtitle"><a href="">Водитель такси/Работа...</a></div>
+							<div class="new-ads__price">70 000 руб.</div>
+							<div class="new-ads__favorites"><i class="icon icon-star-big"></i></div>
+						</div>
+					</div>
+					<div class="new-ads__item">
+						<div class="new-ads__img"><img src="upload/cars/2.png" alt=""></div>
+						<div class="new-ads__content">
+							<div class="new-ads__subtitle"><a href="">Водитель такси/Работа...</a></div>
+							<div class="new-ads__price">70 000 руб.</div>
+							<div class="new-ads__favorites"><i class="icon icon-star-big"></i></div>
+						</div>
+					</div>
+					<div class="new-ads__item">
+						<div class="new-ads__img"><img src="upload/cars/3.png" alt=""></div>
+						<div class="new-ads__content">
+							<div class="new-ads__subtitle"><a href="">Водитель такси/Работа...</a></div>
+							<div class="new-ads__price">70 000 руб.</div>
+							<div class="new-ads__favorites"><i class="icon icon-star-big"></i></div>
+						</div>
+					</div>
+					<div class="new-ads__item">
+						<div class="new-ads__img"><img src="upload/cars/1.png" alt=""></div>
+						<div class="new-ads__content">
+							<div class="new-ads__subtitle"><a href="">Водитель такси/Работа...</a></div>
+							<div class="new-ads__price">70 000 руб.</div>
+							<div class="new-ads__favorites"><i class="icon icon-star-big"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="new-ads__banner"><img src="upload/banner.png" alt=""></div>
+				<div class="new-ads__button button button_blue center">ЕЩЕ ОБЪЯВЛЕНИЯ</div>
+			</div>
+			<div class="what-is-it">
+				<div class="what-is-it__title title">Что такое Проф.Такси?</div>
+				<div class="what-is-it__list">
+					<div class="what-is-it__item what-is-it__item_question what-is-it__item_blue row">
+						<div class="what-is-it__persona"><img src="upload/what-is-it/1.png" alt=""></div>
+						<div class="what-is-it__text">Существует ли площадка, где представители бизнеса такси смогут найти друг друга?</div>
+					</div>
+					<div class="what-is-it__item what-is-it__item_question what-is-it__item_yellow row">
+						<div class="what-is-it__persona"><img src="upload/what-is-it/2.png" alt=""></div>
+						<div class="what-is-it__text">Как называется интернет портал, где водители могут выбрать автомобиль в аренду и сервисы заказов, а партнеры разместить свои предложения?</div>
+					</div>
+					<div class="what-is-it__item what-is-it__item_answer what-is-it__item_white row">
+						<div class="what-is-it__persona"><img src="upload/what-is-it/logo.png" alt=""></div>
+						<div class="what-is-it__text"><strong>Prof.Taxi</strong> – онлайн-площадка для бесплатных объявлений в профессиональной сфере такси. С помощью Prof.Taxi представители бизнес сообщества (водители, таксопарки, службы заказа такси, службы сервисов и т.д) имеют возможность найти или предложить товары или услуги, необходимые для успешного ведения бизнеса. Кроме того, на Prof.Taxi размещаются объявления по поиску работы и о существующих вакансиях на рынке труда в сфере такси.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="questions">
+			<div class="container">
+				<div class="questions__title title">Главные вопросы в бизнесе такси: </div>
+				<div class="questions__list arrows">
+					<div class="question">
+						<div class="question__content">
+							<div class="question__img"><img src="upload/voditel.png" alt=""></div>
+							<div class="question__title">Водители</div>
+						</div>
+						<div class="question__list">
+							<div class="question__item">Какая служба обеспечит работой и заказами?</div>
+							<div class="question__item">Какой партнёр выгодно подключит к агрегаторам Яндекс. Такси, GETT или UBER?</div>
+							<div class="question__item">Где купить оборудование для такси? </div>
+							<div class="question__item">В каком парке арендовать автомобиль дешевле и ближе к моему дому?</div>
+						</div>
+					</div>
+					<div class="question">
+						<div class="question__content">
+							<div class="question__img"><img src="upload/voditel.png" alt=""></div>
+							<div class="question__title">Водители</div>
+						</div>
+						<div class="question__list">
+							<div class="question__item">Какая служба обеспечит работой и заказами?</div>
+							<div class="question__item">Какой партнёр выгодно подключит к агрегаторам Яндекс. Такси, GETT или UBER?</div>
+							<div class="question__item">Где купить оборудование для такси? </div>
+							<div class="question__item">В каком парке арендовать автомобиль дешевле и ближе к моему дому?</div>
+						</div>
+					</div>
+				</div>
+				<a href="" class="questions__button button button_blue block center">ИСКАТЬ ПРЕДЛОЖЕНИЯ</a>
+			</div>
+		</div>
+		<div class="services">
+			<div class="container">
+				<div class="services__title title">Простой ответ: воспользуйтесь площадкой бесплатных <br />объявлений Проф.Такси! Здесь вы сможете:</div>
+				<div class="services__list row row_3">
+					<div class="col">
+						<div class="service">
+							<div class="service__title">Водители</div>
+							<div class="service__img"><img src="upload/services/1.png" alt=""></div>
+							<div class="service__list">
+								<ul class="checked">
+									<li><strong>Выбрать</strong> партнёра агрегатора такси с лучшими условиями</li>
+									<li><strong>Найти</strong> службу заказа <br />такси, где есть много <br />работы</li>
+									<li><strong>Арендовать</strong> автомобиль <br />по лучшей цене</li>
+									<li><strong>Купить или продать</strong> свой <br />автомобиль или <br />аксессуары для такси</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="service">
+							<div class="service__title">Таксопарки и службы такси</div>
+							<div class="service__img"><img src="upload/services/2.png" alt=""></div>
+							<div class="service__list">
+								<ul class="checked">
+									<li><strong>Сдать</strong> в аренду или продать</li>
+									<li><strong>Принять</strong> на работу для профессиональных водителей и сотрудников</li>
+									<li><strong>Сократить расходы</strong> на рекламу</li>
+									<li><strong>Найти</strong> подходящие сервисы и услуги для своего бизнеса</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="service">
+							<div class="service__title">Служба сервиса и услуг для такси</div>
+							<div class="service__img"><img src="upload/services/3.png" alt=""></div>
+							<div class="service__list">
+								<ul class="checked">
+									<li><strong>Расширить географию</strong> своих услуг</li>
+									<li><strong>Получать больше</strong> заказов на свои услуги и повысить прибыль</li>
+									<li><strong>Увеличить</strong> свою клиентскую базу</li>
+									<li><strong>Принять</strong> на работу грамотных специалистов</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__button button button_yellow block center">ИСКАТЬ ПРЕДЛОЖЕНИЯ</div>
+			</div>
+		</div>
+		<div class="about">
+			<div class="container">
+				<div class="about__title title">Prof.Taxi — единая точка доступа к более 25 000 <br />предложений для профессионалов такси</div>
+				<div class="about__content">
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-list"></i></div>
+						<div class="about__subtitle">Заказы</div>
+						<div class="about__text">Партнёры агрегаторов <br />такси для службы заказа <br />такси</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-car"></i></div>
+						<div class="about__subtitle">Транспорт</div>
+						<div class="about__text">Аренда и продажа <br />автомобилей для работы <br />в такси</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-job-opacity"></i></div>
+						<div class="about__subtitle">Работа</div>
+						<div class="about__text">Резюме и вакансии на <br />любые должности в <br />сфере такси</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-config-white"></i></div>
+						<div class="about__subtitle">Сервисы</div>
+						<div class="about__text">Широкий спектр услуг <br />для успешного ведения <br />бизнеса такси</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-arrows"></i></div>
+						<div class="about__subtitle">Широкая география</div>
+						<div class="about__text">Города и населённые <br />пункты по всей стране <br />и за её пределами</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-arrows"></i></div>
+						<div class="about__subtitle">Сортировка</div>
+						<div class="about__text">Предложения по <br />категориям и заданным <br />параметрам</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-filter"></i></div>
+						<div class="about__subtitle">Выбор</div>
+						<div class="about__text">Подходящего <br />предложения с помощью <br />удобных фильтров</div>
+					</div>
+					<div class="about__item">
+						<div class="about__icon"><i class="icon icon-feedback"></i></div>
+						<div class="about__subtitle">Прямая связь</div>
+						<div class="about__text">С владельцем <br />объявления любым <br />удобным способом</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="works">
+			<div class="container">
+				<div class="works__title title">Как это работает? </div>
+				<div class="works__list row row_2">
+					<div class="col">
+						<div class="work">
+							<div class="work__title">Поиск услуг или товаров для такси</div>
+							<div class="work__content">
+								<div class="work__list work__list_blue">
+									<div class="work__item">
+										<span class="work__num">1</span>
+										<p class="work__text">Выбрать свой город или населённыйпункт</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">2</span>
+										<p class="work__text">Выбрать категорию объявлений</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">3</span>
+										<p class="work__text">С помощью дополнительных фильтров найти наиболее оптимальное прдложение</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">4</span>
+										<p class="work__text">Связаться с владельцем объявления</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">5</span>
+										<p class="work__text">Сообщить владельцу объявления, что Вы нашли это объявление на портале Проф.Такси</p>
+									</div>
+								</div>
+								<a href="" class="work__button button block center button_blue">ИСКАТЬ ПРЕДЛОЖЕНИЯ</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="work">
+							<div class="work__title">Вы хотите подать объявление</div>
+							<div class="work__content">
+								<div class="work__list work__list_yellow">
+									<div class="work__item">
+										<span class="work__num">1</span>
+										<p class="work__text">Пройти легкую регистрацию на сайте</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">2</span>
+										<p class="work__text">В личном кабинете по возможности подробно описать свои услуги и тарифы на них</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">3</span>
+										<p class="work__text">Выбрать категорию и подать объявление</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">4</span>
+										<p class="work__text">Выделить свое объявление для получения больших конкурентных преимуществ</p>
+									</div>
+									<div class="work__item">
+										<span class="work__num">5</span>
+										<p class="work__text">Быть всегда на связи</p>
+									</div>
+								</div>
+								<a href="" class="work__button button block center button_yellow">Добавить объявление</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="map">
+			<div class="map__wrap" id="map"></div>
+			<div class="map__content">
+				<div class="map__title title">Наша география</div>
+				<div class="map__logo"><img src="upload/logo-icon.png" alt=""></div>
+				<div class="map__text">Уже более 25 000 <br />предложений для <br />профессионалов такси</div>
+			</div>
+		</div>
+		<div class="why">
+			<div class="container">
+				<div class="why__title title">Почему выгодно размещать предложения у нас </div>
+				<div class="why__list row row_4">
+					<div class="col">
+						<div class="why__item">
+							<div class="why__icon"><i class="icon icon-fast"></i></div>
+							<div class="why__subtitle">Быстро</div>
+							<div class="why__text">Объявление размещается мгновенно и доступно десяткам тысяч пользователей</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="why__item">
+							<div class="why__icon"><i class="icon icon-tax"></i></div>
+							<div class="why__subtitle">Доступно</div>
+							<div class="why__text">Размещение объявлений БЕСПЛАТНО</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="why__item">
+							<div class="why__icon"><i class="icon icon-world"></i></div>
+							<div class="why__subtitle">Много</div>
+							<div class="why__text">Охват по всей России. Возможность подать объявления в каждой категории сервиса Проф.Такси в любом городе</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="why__item">
+							<div class="why__icon"><i class="icon icon-position"></i></div>
+							<div class="why__subtitle">В цель</div>
+							<div class="why__text">Целевая аудитория — представители такси: водители, таксопарки, службы сервисов</div>
+						</div>
+					</div>
+				</div>
+				<div class="why__button button button_yellow center block">ДОБАВИТЬ ОБЪЯВЛЕНИЕ</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer__copy col">© Prof.Taxi, 2017</div>
+				<div class="footer__links right col">
+					<ul>
+						<li><a href="">Мобильная версия</a></li>
+						<li><a href="">Поиск объявлений</a></li>
+						<li><a href="">Условия использования</a></li>
+						<li><a href="">Обратная связь</a></li>
+						<li><a href="">Войти</a></li>
+						<li><a href="">Зарегистрироваться</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

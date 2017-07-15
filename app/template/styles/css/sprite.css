@@ -1,0 +1,191 @@
+.icon-arenda {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -343px;
+  width: 101px;
+  height: 100px; }
+
+.icon-arrow-left {
+  background-image: url(../../img/sprite.png);
+  background-position: -343px -343px;
+  width: 71px;
+  height: 71px; }
+
+.icon-arrow-right-minni {
+  background-image: url(../../img/sprite.png);
+  background-position: -303px -242px;
+  width: 13px;
+  height: 22px; }
+
+.icon-arrow-right {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px -71px;
+  width: 71px;
+  height: 71px; }
+
+.icon-arrows {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px -142px;
+  width: 71px;
+  height: 71px; }
+
+.icon-box {
+  background-image: url(../../img/sprite.png);
+  background-position: -243px 0px;
+  width: 102px;
+  height: 101px; }
+
+.icon-callcenter {
+  background-image: url(../../img/sprite.png);
+  background-position: -101px -343px;
+  width: 100px;
+  height: 100px; }
+
+.icon-car {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -443px;
+  width: 70px;
+  height: 71px; }
+
+.icon-checked {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px -426px;
+  width: 15px;
+  height: 14px; }
+
+.icon-config-white {
+  background-image: url(../../img/sprite.png);
+  background-position: -201px -343px;
+  width: 71px;
+  height: 71px; }
+
+.icon-config {
+  background-image: url(../../img/sprite.png);
+  background-position: -202px -242px;
+  width: 101px;
+  height: 101px; }
+
+.icon-fast {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -121px;
+  width: 121px;
+  height: 121px; }
+
+.icon-feedback {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px -284px;
+  width: 71px;
+  height: 71px; }
+
+.icon-filter {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px -213px;
+  width: 71px;
+  height: 71px; }
+
+.icon-gett {
+  background-image: url(../../img/sprite.png);
+  background-position: -345px -201px;
+  width: 100px;
+  height: 100px; }
+
+.icon-job-opacity {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px -355px;
+  width: 70px;
+  height: 71px; }
+
+.icon-job {
+  background-image: url(../../img/sprite.png);
+  background-position: -345px 0px;
+  width: 100px;
+  height: 101px; }
+
+.icon-list {
+  background-image: url(../../img/sprite.png);
+  background-position: -445px 0px;
+  width: 71px;
+  height: 71px; }
+
+.icon-login {
+  background-image: url(../../img/sprite.png);
+  background-position: -243px -203px;
+  width: 19px;
+  height: 18px; }
+
+.icon-marker {
+  background-image: url(../../img/sprite.png);
+  background-position: -243px -221px;
+  width: 14px;
+  height: 19px; }
+
+.icon-position {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 122px;
+  height: 121px; }
+
+.icon-profile {
+  background-image: url(../../img/sprite.png);
+  background-position: -243px -101px;
+  width: 101px;
+  height: 102px; }
+
+.icon-sale {
+  background-image: url(../../img/sprite.png);
+  background-position: -101px -242px;
+  width: 101px;
+  height: 101px; }
+
+.icon-search {
+  background-image: url(../../img/sprite.png);
+  background-position: -395px -301px;
+  width: 19px;
+  height: 19px; }
+
+.icon-star-big {
+  background-image: url(../../img/sprite.png);
+  background-position: -345px -301px;
+  width: 28px;
+  height: 27px; }
+
+.icon-star {
+  background-image: url(../../img/sprite.png);
+  background-position: -414px -301px;
+  width: 19px;
+  height: 18px; }
+
+.icon-tax {
+  background-image: url(../../img/sprite.png);
+  background-position: -122px 0px;
+  width: 121px;
+  height: 121px; }
+
+.icon-triangle {
+  background-image: url(../../img/sprite.png);
+  background-position: -373px -301px;
+  width: 22px;
+  height: 26px; }
+
+.icon-uber {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -242px;
+  width: 101px;
+  height: 101px; }
+
+.icon-world-opacity {
+  background-image: url(../../img/sprite.png);
+  background-position: -272px -343px;
+  width: 71px;
+  height: 71px; }
+
+.icon-world {
+  background-image: url(../../img/sprite.png);
+  background-position: -121px -121px;
+  width: 122px;
+  height: 120px; }
+
+.icon-yandex {
+  background-image: url(../../img/sprite.png);
+  background-position: -345px -101px;
+  width: 100px;
+  height: 100px; }
