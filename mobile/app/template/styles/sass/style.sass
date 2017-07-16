@@ -1,0 +1,763 @@
+/* Including styles files */
+
+@import sprite
+@import url('../../libs/slick-carousel/slick/slick.css')
+@import url('../../libs/slick-carousel/slick/slick-theme.css')
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic')
+
+
+
+/* Global settings */
+$font-size: 17px
+$font-family-1: 'Roboto', sans-serif
+$color-1: #333333
+
+
+
+*
+	padding: 0
+	margin: 0
+	border: 0
+	box-sizing: border-box
+	outline: none
+
+body
+	font-size: $font-size
+	font-family: $font-family-1
+	color: $color-1
+	background: white
+
+header, nav, main, section, article, aside, footer, li, .block
+	display: block
+
+.inline-block
+	display: inline-block
+
+.hidden
+	display: none
+
+
+
+h1, h2, h3, h4, h5, h6
+	font-size: inherit
+	font-weight: inherit
+
+
+ul
+	font-size: 0
+	li
+		font-size: $font-size
+		list-style-type: none
+
+
+
+a
+	color: $color-1
+	text-decoration: none
+	border-bottom: 1px solid transparent
+	transition: border-bottom .3s
+
+
+img
+	display: block
+
+
+.icon
+	display: inline-block
+	vertical-align: middle
+
+.input, .button, .slick-slide
+	outline: none
+
+/* Grid */
+.container
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+
+.row, .clearfix
+	&:before, &:after
+		display: table
+		content: ''
+		box-sizing: border-box
+	&:after
+		clear: both
+
+.row
+	&_inline
+		font-size: 0
+		> .col
+			display: inline-block
+			vertical-align: top
+			font-size: $font-size
+	&_2
+		.col
+			width: (100% / 2)
+	&_3
+		.col
+			width: (100% / 3)
+	&_4
+		.col
+			width: (100% / 4)
+	&_5
+		.col
+			width: (100% / 5)
+	&_6
+		.col
+			width: (100% / 6)
+
+.col
+	float: left
+	display: block
+	min-height: 1px
+
+strong
+	font-weight: 500
+
+
+
+/* Form elements */
+.input
+	display: inline-block
+	position: relative
+	input
+		font-size: $font-size
+		font-family: $font-family-1
+		background: white
+		font-weight: 300
+		padding: 10.5px
+		border-radius: 5px
+	.icon
+		position: absolute
+		left: 12px
+		top: 12px
+		+ input
+			padding-left: 42px
+			padding-right: 15px
+
+.textarea
+	font-size: $font-size
+	font-family: $font-family-1
+	display: block
+	background: white
+	resize: none
+	border: 1px solid #f0f0f0
+	&_error
+		border-color: red
+
+
+.button
+	font-size: $font-size
+	font-family: $font-family-1
+	transition: .3s
+	text-transform: uppercase
+	font-size: 21px
+	font-weight: 500
+	border-radius: 5px
+	cursor: pointer
+	text-align: center
+	padding-top: 13px
+	padding-bottom: 13px
+	&_xs
+		padding-left: 17px
+		padding-right: 17px
+		font-size: 17px
+		&.button_yellow
+			padding-top: 10px
+			padding-bottom: 10px
+		&.button_blue
+			padding-top: 10.5px
+			padding-bottom: 10.5px
+	&_yellow
+		color: $color-1 !important
+		background: #ffcd00
+		
+	&_blue
+		color: white
+		background: #6aa5d7
+
+.input, .textarea
+	transition: border-color .3s
+
+
+
+::placeholder
+	color: #808080
+
+
+
+
+/* Blocks align */ 
+.left
+	float: left
+
+.right
+	float: right
+
+.center, .container
+	margin-left: auto
+	margin-right: auto
+
+
+.panel
+	padding-top: 20px
+	padding-bottom: 26px
+	background: #004f7e
+	a
+		color: white
+
+	&__button
+		.button
+			display: block
+			text-transform: none
+
+	&__favorites
+		position: absolute
+		top: 26px
+		left: 15px
+
+	&__logo
+		margin-bottom: 31px
+		img
+			margin-left: auto
+			margin-right: auto
+	&__login
+		position: absolute
+		top: 25px
+		right: 15px
+
+.header
+	color: white
+	background: #004f7e
+	position: relative
+	&:before
+		display: block
+		position: absolute
+		content: ''
+		top: -8px
+		width: 100%
+		height: 8px
+		background: url('../../img/bg/shadow.png') repeat-x center top
+	&__title
+		padding-top: 39px
+		margin-bottom: 42px
+
+.search
+	font-size: 0
+	padding-bottom: 32px
+	&__button
+		display: block
+		width: 100%
+	&__input
+		display: block
+		margin-right: 8px
+		width: 100%
+		margin-bottom: 25px
+		input
+			width: 100%
+
+.offers
+	color: $color-1
+	background: white
+	margin-left: -15px
+	margin-right: -15px
+
+.offer
+	display: block
+	padding: 27px 15px 25px
+	border-bottom: 1px solid #e7e7e7
+	font-size: 0
+	position: relative
+	&:after
+		position: absolute
+		display: block
+		content: ''
+		right: 15px
+		top: calc(50% - 12px)
+		@include sprite($arrow-right-minni)
+	&__icon, &__content
+		display: inline-block
+		vertical-align: middle
+	&__title
+		font-size: 33px
+		font-weight: 500
+		margin-bottom: 16px
+		br
+			display: none
+	&__icon
+		width: 80px
+		height: 80px
+		margin-right: 25px
+		.icon
+			position: relative
+			left: -10px
+			top: -10px
+			transform: scale(.8)
+
+	&__count
+		font-size: 17px
+		line-height: 18px
+.title
+	font-size: 42px
+	font-weight: 500
+	text-align: center
+
+.arrows
+	.slick-arrow
+		z-index: 1
+		// background-color: #ffcd00
+		border-radius: 50%
+		transition: opacity .3s
+		&:before
+			display: none
+	.slick-prev
+		@include sprite($arrow-left)
+
+	.slick-next
+		@include sprite($arrow-right)
+
+
+.new-ads
+	padding-bottom: 55px
+	border-bottom: 1px solid #cfcfcf
+	&__title
+		padding-top: 50px
+		padding-bottom: 60px
+	&__list
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
+		.slick-arrow
+			top: 46%
+		.slick-prev
+			left: -63px
+		.slick-next
+			right: -63px
+	&__item
+		background: white
+		box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.38)
+		margin-left: 31px
+		margin-right: 31px
+		width: 255px
+		margin-bottom: 40px
+		margin-top: 5px
+	&__img
+		height: 200px
+		line-height: 200px
+		background: #f7f7f8
+		text-align: center
+		font-size: 0
+		img
+			vertical-align: middle
+			display: inline-block
+			
+	&__content
+		position: relative
+		padding: 20px 10px 15px
+	&__subtitle
+		font-weight: 500
+		margin-bottom: 10px
+		font-size: 19 px
+		a
+			color: #004f7e
+	&__price
+		color: #666
+		font-size: 21px
+		font-weight: 500
+	&__favorites
+		position: absolute
+		bottom: 15px 
+		right: 10px
+		cursor: pointer
+	&__banner
+		margin-bottom: 43px
+		img
+			max-width: 100%
+			margin-left: auto
+			margin-right: auto
+
+.what-is-it
+	padding-top: 50px
+	padding-bottom: 50px
+	&__title
+		padding-bottom: 47px
+	&__persona
+		margin-right: 37px
+		position: absolute
+	&__text
+		width: calc(100% - 250px)
+		font-size: 21px
+		line-height: 27px
+		font-weight: 500
+		padding: 17px 16px 18px 16px
+		border-radius: 8px
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+
+	&__item
+		margin-bottom: 27px
+		position: relative
+		&:last-of-type
+			margin-bottom: 0
+		&_answer
+			.what-is-it
+				&__persona
+					margin-right: 0
+					right: 0
+					top: 19px
+				&__text
+					border: 1px solid #d2d2d2
+					font-weight: 300
+					&:before
+						right: -22px
+						top: 48px
+						@include sprite($triangle)
+
+		&_question
+			.what-is-it
+				&__persona
+					left: 0
+					top: calc(50% - 40px)
+				&__text
+					&:before
+						top: calc(50% - 13px)
+						left: -22px
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 13px 22px 13px 0
+		&_blue
+			.what-is-it
+				&__text
+					color: white
+					background: #6aa5d7
+					&:before
+						border-color: transparent #6aa5d7 transparent transparent
+		&_yellow
+			.what-is-it
+				&__text
+					background: #ffcd00
+					&:before
+						border-color: transparent #ffcd00 transparent transparent
+
+.questions
+	color: white
+	background: #004f7e
+	padding-bottom: 27px
+	.arrows
+		.slick-arrow
+			top: 140px
+		.slick-prev
+			left: 50%
+			margin-left: -250px
+		.slick-next
+			right: 50%
+			margin-right: -250px
+	&__title
+		padding-top: 60px
+		padding-bottom: 50px
+	&__button
+		margin-top: 50px
+	&__list
+		margin-left: -15px
+		margin-right: -15px
+
+.question
+	position: relative
+	padding-left: 15px
+	padding-right: 15px
+	&__img
+		margin-bottom: 70px
+		img
+			margin-left: auto
+			margin-right: auto
+	&__title
+		text-align: center
+		margin-top: 35px
+		margin-bottom: 35px
+		font-size: 25px
+		font-weight: 500
+
+	&__item
+		position: relative
+		width: 100%
+		border: 3px dashed #ffcd00
+		border-radius: 10px
+		padding: 20px 18px
+		font-weight: 500
+		line-height: 25px
+		margin-bottom: 70px
+		&:last-of-type
+			margin-bottom: 0
+		&:before
+			position: absolute
+			display: block
+			content: ''
+			width: 2px
+			height: 74px
+			top: -74px
+			left: calc(50% - 1px)
+			background: #ffcd00
+		&:after
+			content: ''
+			position: absolute
+			width: 20px
+			height: 20px
+			top: -50px
+			background: #004f7e
+			left: calc(50% - 13px)
+			border: 3px solid #ffcd00
+			border-radius: 50%
+		
+.services
+	padding-bottom: 53px
+	&__title
+		padding-top: 60px
+		padding-bottom: 58px
+	&__list
+		margin-bottom: 50px
+		max-width: 270px
+		margin-left: auto
+		margin-right: auto
+.dots
+	.slick-dots
+		position: relative
+		margin-bottom: 30px
+		li
+			width: 20px
+			height: 20px
+			background: white
+			border: 2px solid #cecece
+			border-radius: 50%
+			&.slick-active
+				background: #6aa5d7
+				border-color: #6aa5d7
+		button
+			width: 100%
+			height: 100%
+			&:before
+				display: none
+.service
+	&__title
+		width: 100%
+		display: block
+		text-align: center
+		vertical-align: middle
+		background: #004f7e
+		color: white
+		border-radius: 10px 10px 0 0
+		font-size: 21px
+		font-weight: 500
+		padding: 10px 5px
+	&__img
+		max-width: 585px
+		margin-left: auto
+		margin-right: auto
+	&__list
+		border: 1px solid #cecece
+		border-top-color: transparent
+		border-radius: 0 0 10px 10px
+		padding: 20px 20px 20px 17px
+
+ul.checked
+	li
+		margin-bottom: 17px
+		line-height: 23px
+		font-weight: 300
+		padding-left: 28px
+		position: relative
+		&:last-of-type
+			margin-bottom: 0
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 4px
+			@include sprite($checked)
+		strong
+			font-weight: 500
+
+.about
+	color: white
+	background: #004f7e
+	padding-bottom: 50px
+	&__title
+		padding-top: 65px
+		padding-bottom: 45px
+	&__item
+		margin-bottom: 40px
+		font-size: 0
+	&__subtitle
+		font-size: 25px
+		font-weight: 500
+		margin-bottom: 13px
+
+	&__icon, &__content
+		display: inline-block
+		vertical-align: top
+	&__content
+		margin-left: 25px
+		width: calc(100% - 100px)
+	&__text
+		line-height: 24px
+		font-size: $font-size
+
+		br
+			display: none
+
+
+.works
+	padding-bottom: 30px
+	&__title
+		padding-top: 50px
+		padding-bottom: 40px
+	&__item
+
+	&__list
+
+
+.work
+	&__title
+		display: block
+		vertical-align: middle
+		color: white
+		background: #004f7e
+		text-align: center
+		border-radius: 10px 10px 0 0
+		padding: 10px 5px
+		font-size: 21px
+		line-height: 25px
+		font-weight: 500
+	&__content
+		border: 1px solid #e1e1e1
+		border-top: none
+		padding: 38px 23px 30px 23px
+		border-radius: 0 0 10px 10px
+	&__list
+		margin-bottom: 43px
+		font-size: 0
+		&_blue
+			.work
+				&__num
+					color: white
+					background: #6aa5d7
+		&_yellow
+			.work
+				&__num
+					background: #ffcd00
+
+	&__item
+		position: relative
+		margin-bottom: 30px
+		&:last-of-type
+			margin-bottom: 0
+	&__num
+		display: inline-block
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		border-radius: 50%
+		font-size: 21px
+		font-weight: 500
+		vertical-align: middle
+		margin-right: 16px
+	&__text
+		display: inline-block
+		width: calc(100% - 60px)
+		vertical-align: middle
+		font-size: $font-size
+
+
+.map
+	position: relative
+	&__wrap
+		width: 100%
+		height: 620px
+	&__content
+		position: absolute
+		left: 50%
+		top: 120px
+		width: 354px
+		margin-left: -(354px / 2)
+		text-align: center
+		background: white
+		padding: 31px 42px 45px
+		border-radius: 8px
+		box-shadow: 0px 0px 36px -8px rgba(0,0,0,.8)
+		&:after
+			left: 50%
+			bottom: -22px
+			margin-left: -(40px / 2)
+			position: absolute
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 22px 20px 0 20px
+			border-color: #ffffff transparent transparent transparent
+	&__title
+		margin-bottom: 24px
+		font-size: 33px !important
+	&__logo
+		margin-bottom: 30px
+		img
+			margin-left: auto
+			margin-right: auto
+	&__text
+		font-size: 25px
+		line-height: 33px
+		position: relative
+
+.why
+	&__title
+		padding-top: 68px
+		padding-bottom: 55px
+	&__button
+		margin-top: 45px
+		max-width: 368px
+	&__item
+		font-size: 0
+		margin-bottom: 50px
+		&:last-of-type
+			margin-bottom: 0
+	&__icon, &__content
+		display: inline-block
+		vertical-align: top
+	&__content
+		width: calc(100% - 150px)
+		margin-left: 25px
+
+	&__subtitle
+		font-size: 21px
+		font-weight: 500
+		margin-bottom: 20px
+
+
+	&__text
+		line-height: 23px
+		font-size: $font-size
+
+.footer
+	margin-top: 60px
+	text-align: center
+	.container
+		> .row
+			border-top: 1px solid #d6d6d6
+			padding-top: 60px
+			padding-bottom: 60px
+	&__copy
+		font-size: 29px
+		margin-bottom: 65px
+	&__links
+		li
+			font-size: 29px
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+		a

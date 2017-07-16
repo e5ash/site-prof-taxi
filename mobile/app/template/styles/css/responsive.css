@@ -1,0 +1,146 @@
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 28px; }
+  .header__title {
+    padding-top: 20px;
+    margin-bottom: 30px; }
+  .offer {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .offer__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px; }
+    .offer__icon .icon {
+      -webkit-transform: scale(0.6);
+          -ms-transform: scale(0.6);
+              transform: scale(0.6);
+      left: -20px;
+      top: -20px; }
+  .offer__title {
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .offer__count {
+    font-size: 15px; }
+  .new-ads {
+    padding-bottom: 15px; }
+  .new-ads__title {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .new-ads__list {
+    margin-bottom: 15px !important; }
+    .new-ads__list .slick-dots {
+      bottom: 0;
+      margin-bottom: 0; }
+  .new-ads__item {
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .new-ads__banner {
+    display: none; }
+  .what-is-it {
+    padding-top: 15px;
+    padding-bottom: 20px; }
+  .what-is-it__title {
+    padding-bottom: 15px; }
+  .what-is-it__text {
+    width: -webkit-calc(100% - 110px);
+    width: calc(100% - 110px); }
+  .what-is-it__text, .what-is-it__item_answer .what-is-it__text {
+    margin-right: 0;
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 300; }
+  .what-is-it__item_answer .what-is-it__text {
+    margin-right: auto;
+    margin-left: 0; }
+  .question__img {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+    .question__img img {
+      width: 100%; }
+  .questions .slick-arrow {
+    top: 40px !important;
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8); }
+  .questions .slick-prev {
+    left: 0 !important;
+    margin-left: 0 !important; }
+  .questions .slick-next {
+    right: 0 !important;
+    margin-right: 0 !important; }
+  .questions__title {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .services {
+    padding-bottom: 20px; }
+  .services__title, .about__title {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .about {
+    padding-bottom: 1px; }
+  .about__icon {
+    width: 60px;
+    width: 60px; }
+    .about__icon .icon {
+      position: relative;
+      top: -5px;
+      left: -5px;
+      -webkit-transform: scale(0.85);
+          -ms-transform: scale(0.85);
+              transform: scale(0.85); }
+  .about__content {
+    margin-left: 10px;
+    width: -webkit-calc(100% - 72px);
+    width: calc(100% - 72px); }
+  .about__subtitle {
+    margin-bottom: 3px; }
+  .works .slick-dots {
+    bottom: -10px; }
+  .works__title {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .map__content {
+    left: 0;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+  .map__text {
+    font-size: 20px;
+    line-height: normal; }
+  .map__title {
+    font-size: 28px !important; }
+  .why__title {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .why__subtitle {
+    margin-bottom: 5px; }
+  .why__icon {
+    width: 60px;
+    height: 60px; }
+    .why__icon .icon {
+      position: relative;
+      top: -30px;
+      left: -30px;
+      -webkit-transform: scale(0.5);
+          -ms-transform: scale(0.5);
+              transform: scale(0.5); }
+  .why__content {
+    margin-left: 10px;
+    width: -webkit-calc(100% - 72px);
+    width: calc(100% - 72px); }
+  .why__button {
+    margin-top: 15px; }
+  .footer {
+    margin-top: 30px; }
+  .footer .container > .row {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .footer__copy, .footer__links li {
+    font-size: 15px; }
+  .footer__copy {
+    margin-bottom: 20px; }
+  .footer__links li {
+    margin-bottom: 10px; } }
